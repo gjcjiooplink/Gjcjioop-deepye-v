@@ -9,7 +9,7 @@
     "client": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "cross-env NODE_ENV=production node server/index.js",
+    "start": "node server/index.js",
     "build:prod": "vite build --mode production",
     "serve": "npm run build:prod && npm run start"
   },
