@@ -1,0 +1,38 @@
+{
+  "name": "deepyevision-website",
+  "version": "1.0.0",
+  "description": "DeepyeVision游戏智能助手官网",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "build:prod": "vite build --mode production",
+    "serve": "npm run build:prod && npm run start"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.0",
+    "framer-motion": "^10.0.0",
+    "helmet": "^7.0.0",
+    "lucide-react": "^0.263.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.0",
+    "@types/express": "^4.17.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "concurrently": "^8.0.0",
+    "cross-env": "^10.1.0",
+    "terser": "^5.46.1",
+    "vite": "^4.3.0"
+  }
+}
